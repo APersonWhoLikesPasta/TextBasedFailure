@@ -4,7 +4,7 @@
 #        Contributers         #
 #-----------------------------#
 # Franklin                    #
-#                             #
+# CJ                          #
 ###############################
 #         Micro-README        #
 #-----------------------------#####################################
@@ -18,7 +18,7 @@
 # Imports
 import time
 import sys
-from easteregg import user_name_check
+import easteregg
 import test
 
 # Variables
@@ -65,7 +65,7 @@ you must answer with the capitlized option. \nDo you UNDERSTAND?
 def user_name_selection():
     print("What is your name?")
     user_name = input('> ')
-    user_name_check(user_name)
+    easteregg.user_name_check(user_name)
     print(f'Glad to have you {user_name}!')
 
 

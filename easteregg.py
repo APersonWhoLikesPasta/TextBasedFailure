@@ -1,9 +1,8 @@
+# Imports
 import sys
 import time
 
-global points
-points = 0
-
+# Program
 def user_death():
     print("")
     print("===== Game Over =====")
@@ -30,6 +29,4 @@ def user_name_check(user_name):
         user_death()
     elif user_name.upper() == "CJ":
         user_win()
-    elif user_name.upper() == "FRANKLIN":
-        print(f"Congratulations you found some points, you now have {points}")
         
