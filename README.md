@@ -18,6 +18,12 @@ before the actuale purpose. For example `text_display` rather than
 * Text files that are meant to be displayed in-game should have 2
 blank lines (newlines) at the end of it.
 * A newline should end every single file. Sometimes more.
+* All inputs should be `> `. Don't forget the space.
+* When accepting input rember to capitlize the input.
+* When a character dies in the game, print the game over screen
+and type `quit()`
+* There should be 2 newlines after a function is defined
+* Put `ERROR: ` before all error messages.
 
 *As always this is a countious standard, and may change.*
 
