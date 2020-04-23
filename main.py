@@ -1,13 +1,8 @@
-###############################
-# A Text Based Adventure Game #
-###############################
-#        Contributers         #
-#-----------------------------#
-# Franklin                    #
-# CJ                          #
-###############################
-#         Micro-README        #
-#-----------------------------#####################################
+###################################################################
+#                A Text Based Adventure Game                      #
+#-----------------------------------------------------------------#
+#                      Micro-README                               #
+#-----------------------------------------------------------------#
 # This is a test based adventure game. To keep things clean and   #
 # organized there are certain standards which you must adhere to. #
 # All standards are in the README. Read it. Failure to adhere to  #
@@ -19,7 +14,6 @@
 import time
 import sys
 import easteregg
-import test
 
 # Variables
 intro = open('intro.txt')
@@ -34,9 +28,10 @@ def dry_run():
     print("ONE")
     print("one")
     print(1)
-    print(1.00
+    print(1.00)
     
-    for char in msg:
+    test_msg = "<---------->"
+    for char in test_msg:
         time.sleep(speed)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -53,7 +48,7 @@ def user_tutorial():
 """
 Greetings! In this game you will face many diffucult decions. When you are asked for a respounce
 you must answer with the capitlized option. \nDo you UNDERSTAND?
-""", 0.05)
+""", 0.005)
         understanding = input('> ')
         if understanding.upper() == "UNDERSTAND":
             break
@@ -92,7 +87,7 @@ def text_type(msg, speed):
 # Exec
 if __name__ == "__main__":
     # Debug    
-    #dry_run()
+    #ry_run()
 
     # Titlescreen
     text_type(intro, 0.1)
@@ -103,4 +98,4 @@ if __name__ == "__main__":
 
 else:
     print("Please run this module directly")
-    quit()
+    sys.exit()
