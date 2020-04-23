@@ -1,4 +1,5 @@
 import sys
+import time
 
 def user_name_check(user_name):
     if user_name.upper() == "THANOS":
@@ -6,4 +7,5 @@ def user_name_check(user_name):
         sys.exit()
     elif user_name.upper() == "EPIC GAMER MOMENT":
         print('Ah, a true man of culture.')
+        time.sleep(1.0)
         print("")

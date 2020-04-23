@@ -67,7 +67,7 @@ def user_class_selection():
     user_name = input('> ')
     #from easteregg import user_name_check
     user_name_check(user_name)
-    print(f"Glad to have you {user_name}!")
+    print(f"Glad to have you {user_name}!") # Nothing is wrong. I tried on my comp.
 
 
 def user_dead():
