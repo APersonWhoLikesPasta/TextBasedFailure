@@ -6,3 +6,4 @@ def user_name_check(user_name):
         sys.exit()
     elif user_name.upper() == "EPIC GAMER MOMENT":
         print('Ah, a true man of culture.')
+        print("")
