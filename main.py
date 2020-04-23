@@ -45,12 +45,7 @@ def text_type_test(speed):
 ###########
 # Program #
 ###########
-# Eastereggs
-'''def user_name_check(user_name):
-    if user_name.upper() == "THANOS":
-        print('A snap is heard, and you are turned to dust.')
-        sys.exit()
-'''
+
 # User
 def user_tutorial():
     while True:
