@@ -19,6 +19,7 @@
 import time
 import sys
 from easteregg import user_name_check
+import test
 
 # Variables
 intro = open('intro.txt')
@@ -26,21 +27,20 @@ contributors = open('contributors.txt')
 global user_name
 user_name = ""
 
+
 # Debug Functions
 def dry_run():
     print("Testing Exec")
     print("ONE")
     print("one")
     print(1)
-    print(1.0)
-
-
-def text_type_test(speed):
-    msg = "<----------> \n"
+    print(1.00
+    
     for char in msg:
         time.sleep(speed)
         sys.stdout.write(char)
         sys.stdout.flush()
+
 
 ###########
 # Program #
@@ -49,11 +49,11 @@ def text_type_test(speed):
 # User
 def user_tutorial():
     while True:
-        print(
+        text_type(
 """
 Greetings! In this game you will face many diffucult decions. When you are asked for a respounce
-you must answer with the capitlized option. Do you UNDERSTAND?
-""")
+you must answer with the capitlized option. \nDo you UNDERSTAND?
+""", 0.05)
         understanding = input('> ')
         if understanding.upper() == "UNDERSTAND":
             break
@@ -62,22 +62,26 @@ you must answer with the capitlized option. Do you UNDERSTAND?
     print("Fantastic \n")
 
 
-def user_class_selection():
+def user_name_selection():
     print("What is your name?")
     user_name = input('> ')
-    #from easteregg import user_name_check
     user_name_check(user_name)
-    print(f"Glad to have you {user_name}!") # Nothing is wrong. I tried on my comp.
+    print(f'Glad to have you {user_name}!')
 
 
+# User End
 def user_dead():
     print("")
     print("===== Game Over =====")
     print("")
     sys.exit()
 
+def user_win():
+    print("===== You Win =====")
+    sys.exit()
 
-# Miscellanous
+
+# Technical
 def text_type(msg, speed):
     for char in msg:
         time.sleep(speed)
@@ -89,14 +93,13 @@ def text_type(msg, speed):
 if __name__ == "__main__":
     # Debug    
     #dry_run()
-    #text_type_test(0.09)
 
-    # Intro
+    # Titlescreen
     text_type(intro, 0.1)
     text_type(contributors, 0.1)
-
+    # Intro
     user_tutorial()
-    user_class_selection()
+    user_name_selection()
 
 else:
     print("Please run this module directly")

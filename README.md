@@ -24,6 +24,8 @@ blank lines (newlines) at the end of it.
 and type `quit()`
 * There should be 2 newlines after a function is defined
 * Put `ERROR: ` before all error messages.
+* When you put a message put `===` around it if it is a long 
+message and `===== [msg] =====` if it is short.
 
 *As always this is a countious standard, and may change.*
 
