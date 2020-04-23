@@ -18,6 +18,7 @@
 # Imports
 import time
 import sys
+from easteregg import user_name_check
 
 # Variables
 intro = open('intro.txt')
@@ -41,15 +42,16 @@ def text_type_test(speed):
         sys.stdout.write(char)
         sys.stdout.flush()
 
-
-# Program
-def text_type(msg, speed):
-    for char in msg:
-        time.sleep(speed)
-        sys.stdout.write(char)
-        sys.stdout.flush()
-
-
+###########
+# Program #
+###########
+# Eastereggs
+'''def user_name_check(user_name):
+    if user_name.upper() == "THANOS":
+        print('A snap is heard, and you are turned to dust.')
+        sys.exit()
+'''
+# User
 def user_tutorial():
     while True:
         print(
@@ -68,7 +70,7 @@ you must answer with the capitlized option. Do you UNDERSTAND?
 def user_class_selection():
     print("What is your name?")
     user_name = input('> ')
-    from easteregg import user_name_check
+    #from easteregg import user_name_check
     user_name_check(user_name)
     print(f"Glad to have you {user_name}!")
 
@@ -78,6 +80,14 @@ def user_dead():
     print("===== Game Over =====")
     print("")
     sys.exit()
+
+
+# Miscellanous
+def text_type(msg, speed):
+    for char in msg:
+        time.sleep(speed)
+        sys.stdout.write(char)
+        sys.stdout.flush()
 
 
 # Exec
