@@ -9,7 +9,7 @@ points.points_add()
 def tr_lobby():
     text_type("You step into a small chamber. It looks like a tiny reception hall.", 0.03)
     text_type("Just as you where about to move on you notice something sparkling in the corner.", 0.03)
-    treasure = randint(1, 300)
+    treasure = randint(1, 3)
     if treasure == 1:
         text_type("You find a small dagger.", 0.03)
     elif treasure == 2:

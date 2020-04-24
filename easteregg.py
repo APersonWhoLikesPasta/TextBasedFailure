@@ -1,5 +1,5 @@
 # Imports
-import sys, time, points
+import sys, time, points, random
 
 
 # Program
@@ -48,4 +48,10 @@ def user_name_check(user_name):
                 sys.stdout.flush()
             print("")
             print("test")
+    elif user_name.upper() == 'DEBUG_RAND':
+        rand_int = random.randint(1, 100)
+        rand_int_two = random.randint(1, 50)
+        rand_int_three = random.randint(1, 10)
+        print(f"Rand_1: {rand_int}, Rand_2: {rand_int_two}, Rand_3: {rand_int_three}")
+        time.sleep(1.5)
         
