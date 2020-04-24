@@ -11,12 +11,8 @@
 ###################################################################
 
 # Imports
+import time, sys, easteregg, points
 from technical import *
-import time
-import sys
-import easteregg
-import random
-import points
 # Rooms
 from treasure_room import *
 from battle_room import *
@@ -30,20 +26,7 @@ global points
 points = 0
 
 # Debug Functions
-def dry_run(speed):
-    print("Testing Exec")
-    print("ONE")
-    print("one")
-    print(1)
-    print(1.00)
-    
-    test_msg = "<---------->"
-    for char in test_msg:
-        time.sleep(speed)
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        print("")
-        print("test")
+
 
 
 ###########
@@ -96,15 +79,6 @@ def user_dead():
 def user_win():
     print("===== You Win =====")
     sys.exit()
-
-
-# Technical
-def text_type(msg, speed):
-    for char in msg:
-        time.sleep(speed)
-        sys.stdout.write(char)
-        sys.stdout.flush()
-    print("")
 
 
 # Exec

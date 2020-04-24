@@ -1,7 +1,5 @@
 # Imports
-import sys
-import time
-import points
+import sys, time, points
 
 
 # Program
@@ -33,7 +31,21 @@ def user_name_check(user_name):
         user_death()
     # Debug
     elif user_name.upper() == "DEBUG_POINTS":
-        print("Nice name, you get points")
+        print("You get points")
         points.points += 100
         print(f"You now have {points.points} points")
+    elif user_name.upper() == "DEBUG_RUN":
+            print("Testing Exec")
+            print("ONE")
+            print("one")
+            print(1)
+            print(1.00)
+    
+            test_msg = "<---------->"
+            for char in test_msg:
+                time.sleep(0.5)
+                sys.stdout.write(char)
+                sys.stdout.flush()
+            print("")
+            print("test")
         
