@@ -27,6 +27,3 @@ def user_name_check(user_name):
     elif user_name.upper() == "FINN":
         print("Oh. Well nevermind. We need compentent heros.")
         user_death()
-    elif user_name.upper() == "CJ":
-        user_win()
-        

@@ -1,7 +1,7 @@
 ###################################################################
 #                A Text Based Adventure Game                      #
 #-----------------------------------------------------------------#
-#                      Micro-README                               #
+#                        Micro-README                             #
 #-----------------------------------------------------------------#
 # This is a test based adventure game. To keep things clean and   #
 # organized there are certain standards which you must adhere to. #
@@ -14,16 +14,19 @@
 import time
 import sys
 import easteregg
+import random
 
 # Variables
 intro = open('intro.txt')
 contributors = open('contributors.txt')
 global user_name
 user_name = ""
+global points
+points = 0
 
 
 # Debug Functions
-def dry_run():
+def dry_run(speed):
     print("Testing Exec")
     print("ONE")
     print("one")
@@ -35,6 +38,8 @@ def dry_run():
         time.sleep(speed)
         sys.stdout.write(char)
         sys.stdout.flush()
+        print("")
+        print("test")
 
 
 ###########
@@ -46,22 +51,35 @@ def user_tutorial():
     while True:
         text_type(
 """
-Greetings! In this game you will face many diffucult decions. When you are asked for a respounce
+Greetings! In this game you will face many diffucult decision. When you are asked for a response
 you must answer with the capitlized option. \nDo you UNDERSTAND?
-""", 0.005)
+""", 0.03)
         understanding = input('> ')
         if understanding.upper() == "UNDERSTAND":
             break
         else:
             continue
-    print("Fantastic \n")
+    text_type("Fantastic\n", 0.03)
+    time.sleep(0.5)
 
 
 def user_name_selection():
-    print("What is your name?")
+    text_type("What is your name?", 0.03)
     user_name = input('> ')
     easteregg.user_name_check(user_name)
-    print(f'Glad to have you {user_name}!')
+    text_type(f'Glad to have you {user_name}!', 0.03)
+    
+
+def mission_breif():
+    text_type("You are a wealthy g̶r̶a̶v̶e̶ ̶r̶o̶b̶b̶e̶r̶, archeologist.", 0.03)
+    text_type("You are in search of secret artifacts.", 0.03)
+    text_type("Each artifact you collect will give you a varying amount of points.", 0.03)
+    text_type("==========", 0.03)
+
+
+def mission_start():
+    text_type("You slowly approuch the entrence. As you get closer you think that devs should have made this more intresting, but when you remember that the devs can't write themselves out of a bag.", 0.03)
+    text_type("You duck inside.", 0.03)
 
 
 # User End
@@ -82,12 +100,13 @@ def text_type(msg, speed):
         time.sleep(speed)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("")
 
 
 # Exec
 if __name__ == "__main__":
     # Debug    
-    #ry_run()
+    #dry_run(0.5)
 
     # Titlescreen
     text_type(intro, 0.1)
@@ -95,6 +114,9 @@ if __name__ == "__main__":
     # Intro
     user_tutorial()
     user_name_selection()
+    # Mission
+    mission_breif()
+    mission_start()
 
 else:
     print("Please run this module directly")
