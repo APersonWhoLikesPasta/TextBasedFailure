@@ -22,14 +22,8 @@ def tr_lobby():
             text_type("HELP!",0.03)
             text_type("HELP ME!", 0.03)
             text_type("Theres been an ERROR!", 0.03)
-    points.points += 5
+    points.points += 50
     print(f'you now have {points.points} points') 
 
-    move_on = input('\n===== Press an WASD to Choose your Direction =====\n') 
-    if move_on.upper() == "S":
-        text_type("You leave the chamber and are forever known as the person with much bark but no bite.", 0.03) 
-    if points.points >= 5000:
-        print (f'===== You Win =====')
-        sys.exit()
-        
+    user_win_query()   
     mission_continue()

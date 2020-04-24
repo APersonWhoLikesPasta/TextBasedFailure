@@ -3,7 +3,6 @@ import sys
 import time
 import points
 import random
-import technical
 import rand_room
 from treasure_room import *
 import rock_paper_scissors

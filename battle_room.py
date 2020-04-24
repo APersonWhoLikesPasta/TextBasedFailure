@@ -12,6 +12,7 @@ def battle_room():
     print(f'You enter a room and see a {opponent.opponent}, they look at your menacingly.')
     rock_paper_scissors.rock_paper_scissors()
 
+    user_win_query()
     mission_continue()
     
     

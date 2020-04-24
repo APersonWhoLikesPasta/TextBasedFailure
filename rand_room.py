@@ -17,7 +17,7 @@ def room_select_begin():
     if room_select_begin == 1:
         tr_lobby()
     elif room_select_begin == 2:
-        misc_room()
+        misc_empty()
     elif room_select_begin == 3:
         battle_room()
     else:

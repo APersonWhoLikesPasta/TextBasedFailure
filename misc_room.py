@@ -1,8 +1,8 @@
 from technical import *
 # Unique rooms that have as much content as a normal room,
 
-def misc_room():
+def misc_empty():
     print(f'you enter a room with nothing in it')
-    move_on = input('\n===== Press an WASD to Choose your Direction =====\n') 
 
+    user_win_query()
     mission_continue()

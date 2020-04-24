@@ -1,6 +1,7 @@
-# imports
-import time
+# Imports
 import sys
+import time
+import points
 from technical import *
 
 def text_type(msg, speed):
@@ -20,7 +21,7 @@ def mission_continue():
     
     
     while True:
-        text_type("\n===== Press an WASD to Choose your Direction =====\n", 0.03)
+        text_type("\n===== Press an WASD to Choose your Direction =====", 0.03)
         Movementinput = input('> ')
 
         if Movementinput.upper() == 'W':
@@ -41,3 +42,9 @@ def mission_continue():
             break
         else:
             continue
+
+
+def user_win_query():
+    if points.points >= 3000:
+        print("===== You Win =====")
+        sys.exit()
