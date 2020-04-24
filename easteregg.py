@@ -33,6 +33,9 @@ def user_name_check(user_name):
     elif user_name.upper() == "DEBUG_POINTS":
         print("You get points")
         points.points += 100
+    elif user_name.upper() == "DEBUG_WIN":
+        print("You get points")
+        points.points += 5001
         print(f"You now have {points.points} points")
     elif user_name.upper() == "DEBUG_RUN":
             print("Testing Exec")

@@ -100,3 +100,6 @@ if __name__ == "__main__":
 else:
     print("Please run this module directly")
     sys.exit()
+
+if points.points >= 5000:
+    sys.exit 
