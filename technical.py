@@ -10,6 +10,7 @@ def text_type(msg, speed):
         sys.stdout.flush()
     print("")
 
+
 def debug_end():
     print("===== Game Ended =====")
     sys.exit()
