@@ -1,8 +1,12 @@
 # Imports
 import sys
 import time
+import points
+
 
 # Program
+points.points_add()
+
 def user_death():
     print("")
     print("===== Game Over =====")
@@ -27,3 +31,9 @@ def user_name_check(user_name):
     elif user_name.upper() == "FINN":
         print("Oh. Well nevermind. We need compentent heros.")
         user_death()
+    # Debug
+    elif user_name.upper() == "DEBUG_POINTS":
+        print("Nice name, you get points")
+        points.points += 100
+        print(f"You now have {points.points} points")
+        

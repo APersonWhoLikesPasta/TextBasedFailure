@@ -11,10 +11,15 @@
 ###################################################################
 
 # Imports
+from technical import *
 import time
 import sys
 import easteregg
 import random
+import points
+# Rooms
+from treasure_room import *
+from battle_room import *
 
 # Variables
 intro = open('intro.txt')
@@ -23,7 +28,6 @@ global user_name
 user_name = ""
 global points
 points = 0
-
 
 # Debug Functions
 def dry_run(speed):
@@ -51,7 +55,7 @@ def user_tutorial():
     while True:
         text_type(
 """
-Greetings! In this game you will face many diffucult decision. When you are asked for a response
+Greetings! In this game you will face many diffucult decisions. When you are asked for a response
 you must answer with the capitlized option. \nDo you UNDERSTAND?
 """, 0.03)
         understanding = input('> ')
@@ -78,7 +82,7 @@ def mission_breif():
 
 
 def mission_start():
-    text_type("You slowly approuch the entrence. As you get closer you think that devs should have made this more intresting, but when you remember that the devs can't write themselves out of a bag.", 0.03)
+    text_type("You slowly approach the entrance. As you get closer you think that devs should have made this more intresting, but when you remember that the devs can't write themselves out of a bag. Or spell for that matter", 0.03)
     text_type("You duck inside.", 0.03)
 
 
@@ -117,6 +121,7 @@ if __name__ == "__main__":
     # Mission
     mission_breif()
     mission_start()
+    tr_lobby()
 
 else:
     print("Please run this module directly")
