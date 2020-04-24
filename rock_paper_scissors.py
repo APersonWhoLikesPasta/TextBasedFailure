@@ -13,51 +13,49 @@ def rock_paper_scissors():
     if Gameinput == 1:
         if Playerinput == ('STAB'):
             print(f'The {opponent.opponent} dodged your attack.')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
     if Gameinput == 1:
         if Playerinput == ('LUNGE'):
-            print ('Your a Loser')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
-    if Gameinput == 1:
+            print ('You\'re a Loser.')
+            mission_continue()
+    if Gameimission_continunput == 1:
         if Playerinput == ('PUNCH'):
             points.points += 100
             print(f'Go Get em! You Win, and now have {points.points} points')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continue()
 
-    if Gameinput == LUNGE:
+    if Gameimission_continunput == LUNGE:
         if Playerinput == ('LUNGE'):
             print(f'The {opponent.opponent} dodged your attack.')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
     if Gameinput == LUNGE:
         if Playerinput == ('PUNCH'):
             print('I knew you were a faliure when you first touched the keyboard')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continue()
     if Gameinput == LUNGE:
         if Playerinput == ('STAB'):
-            points.points += 100
+            mission_continupoints.points += 100
             print(f'Winner Winner Chicken Dinner, you now have {points.points} points')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continue()
 
     if Gameinput == PUNCH:
         if Playerinput == ('PUNCH'):
-            print(f'The {opponent.opponent} dodged your attack.')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continuprint(f'The {opponent.opponent} dodged your attack.')
+            mission_continue()
     if Gameinput == PUNCH:
         if Playerinput == ('STAB'):
             print("You died a horrible death, and made {opponent.opponent} very happy.")
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continue()
     if Gameinput == 2:
-        if Playerinput == ('LUNGE'):
+        if Pmission_continulayerinput == ('LUNGE'):
             points.points += 100
             print(f'You Win! You now have {points.points} points')
-            move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continue()
 
-    if Playerinput != 'STAB':
+    if Playemission_continurinput != 'STAB':
         if Playerinput != 'LUNGE':
             if Playerinput != 'PUNCH':
                 print ("Thats not even an option dude")
                 points -= 5
-                text_type(f"You have {points.points}.")
-                move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+            mission_continu    text_type(f"You have {points.points}.")
+                mission_continue()
 
-### This can probably be used as a combat system in some fashion. ###
+### This can probably be used as a combat system in some fashion. ###mission_continu

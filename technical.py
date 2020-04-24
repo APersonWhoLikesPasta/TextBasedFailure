@@ -17,22 +17,27 @@ def debug_end():
 
 
 def mission_continue():
-    move_on = input('\n===== Press an WASD to Choose your Direction =====\n')
+    
     
     while True:
+        text_type("\n===== Press an WASD to Choose your Direction =====\n", 0.03)
         Movementinput = input('> ')
 
         if Movementinput.upper() == 'W':
             text_type("You advance to the next room.", 0.03)
+            text_type("==========", 0.03)
             break
         elif Movementinput.upper() == 'A':
             text_type("You advance to the next room.", 0.03)
+            text_type("==========", 0.03)
             break
         elif Movementinput.upper() == 'S':
             text_type("You advance to the next room.", 0.03)
+            text_type("==========", 0.03)
             break
         elif Movementinput.upper() == 'D':
             text_type("You advance to the next room.", 0.03)
+            text_type("==========", 0.03)
             break
         else:
             continue

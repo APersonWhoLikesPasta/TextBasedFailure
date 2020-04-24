@@ -60,12 +60,13 @@ def mission_breif():
     text_type("You are in search of secret artifacts.", 0.03)
     text_type("Each artifact you collect will give you a varying amount of points.", 0.03)
     text_type("==========", 0.03)
+    time.sleep(0.5)
 
 
 def mission_start():
     text_type(
         "You slowly approach the entrance. As you get closer you think that devs should have \nmade this more "
-        "interesting, but when you remember that the devs can't write themselves out of a bag. \nOr spell for that "
+        "interesting, but when you remember that the devs can't write themselves out of a bag. \nOr spell for that."
         "matter",
         0.03)
     text_type("You duck inside.", 0.03)
