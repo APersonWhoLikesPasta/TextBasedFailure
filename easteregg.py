@@ -5,7 +5,7 @@ import points
 import random
 import technical
 from treasure_room import *
-
+import rock_paper_scissors
 # Program
 points.points_add()
 
@@ -33,7 +33,7 @@ def user_name_check(user_name):
         time.sleep(1.0)
         print("")
     elif user_name.upper() == "FINN":
-        print("Oh. Well nevermind. We need compentent heros.")
+        print("Oh. Well nevermind, you must be this tall to play.")
         user_death()
     elif user_name.upper() == "69":
         text_type("Nice", 0.03)
@@ -70,6 +70,10 @@ def user_name_check(user_name):
         print(
             f"Rand_1: {rand_int}, Rand_2: {rand_int_two}, Rand_3: {rand_int_three}")
         time.sleep(1.5)
-    elif user_name.upper() == "DEBUG_LOBBY":
-        tr_lobby()
+    elif user_name.upper() == "DEBUG_MAP":
+        map = input('> ')
+        if map.upper() == 'TR_LOBBY':
+            tr_lobby()
         technical.debug_end()
+    elif user_name.upper() == "DEBUG_FIGHT":
+        rock_paper_scissors.rock_paper_scissors()

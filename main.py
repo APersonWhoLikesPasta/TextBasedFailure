@@ -11,7 +11,7 @@
 ###################################################################
 
 # Imports
-import time, sys, easteregg, points
+import time, sys, easteregg, points, rand_room, rock_paper_scissors
 from technical import *
 # Rooms
 from treasure_room import *
@@ -100,7 +100,8 @@ if __name__ == "__main__":
     mission_breif()
     mission_start()
     tr_lobby()
-
+    rock_paper_scissors.rock_paper_scissors()
+    #rand_room.room_select()
 else:
     print("Please run this module directly")
     sys.exit()

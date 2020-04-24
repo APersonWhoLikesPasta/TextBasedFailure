@@ -7,6 +7,7 @@ We have a modest list of cheat codes. I don't know how useful these are, but the
 #### Full List
 * DEBUG_RUN - Prints several things, and tests the typing function.
 * DEBUG_POINTS - Gives you 100 points
-* DEBUG_POINTS - Gives you *a lot* of points.
+* DEBUG_WIN - Gives you *a lot* of points.
 * DEBUG_RAND - Simple test for the RNG.
-* DEBUG_LOBBY - Tests the lobby room.
+* DEBUG_MAP - Tests the map. You type the map inthe next promt.
+* DEBUG_FIGHT - Stars a battle.

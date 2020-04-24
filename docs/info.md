@@ -26,6 +26,7 @@ and type `quit()`
 * Put `ERROR: ` before all error messages.
 * When you put a message put `===` around it if it is a long 
 message and `===== [msg] =====` if it is short.
+* Pep8 whenever possible (so always).
 
 *As always this is a countious standard, and may change.*
 
@@ -71,3 +72,9 @@ still be neat, and interperted by a wide variety of machines.
 | 1, 2, etc     | Numbered List   |
 | [msg]([link]) | Embed Links     |
 | ---           | Line            |
+
+
+# Different Type Errors
+* Errors - Occur when you go to run. Imidetly stop program. Eg. syntax error
+* RunTime Error - Error that only occurs under specific circumstances during runtime.
+* Semantic Error - No Error is through, but the code still misbeaves
