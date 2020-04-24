@@ -24,3 +24,6 @@ def tr_lobby():
             text_type("Theres been an ERROR!", 0.03)
     points.points += 5
     print(f'you now have {points.points} points')   
+    if points.points >= 5000:
+        print (f'===== You Win =====')
+        sys.exit()

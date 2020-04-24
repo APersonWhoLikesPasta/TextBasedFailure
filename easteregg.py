@@ -29,14 +29,20 @@ def user_name_check(user_name):
     elif user_name.upper() == "FINN":
         print("Oh. Well nevermind. We need compentent heros.")
         user_death()
+    elif user_name.upper() == "69":
+        text_type("Nice", 0.03)
     # Debug
     elif user_name.upper() == "DEBUG_POINTS":
         print("You get points")
         points.points += 100
     elif user_name.upper() == "DEBUG_WIN":
         print("You get points")
-        points.points += 5001
+        points.points += 4999
         print(f"You now have {points.points} points")
+        if points.points >= 5000:
+            user_win()
+            #print (f'===== You Win =====')
+            #sys.exit()
     elif user_name.upper() == "DEBUG_RUN":
             print("Testing Exec")
             print("ONE")

@@ -22,8 +22,7 @@ intro = open('intro.txt')
 contributors = open('contributors.txt')
 global user_name
 user_name = ""
-global points
-points = 0
+points.points_add()
 
 # Debug Functions
 
@@ -102,4 +101,4 @@ else:
     sys.exit()
 
 if points.points >= 5000:
-    sys.exit 
+    easteregg.user_win()
