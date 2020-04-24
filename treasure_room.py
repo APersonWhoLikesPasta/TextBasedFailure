@@ -1,6 +1,6 @@
 # All the code for the randomly generated treasure rooms
 # Import
-from technical import text_type
+from technical import *
 import time, sys, points
 from random import randint
 points.points_add()
@@ -23,7 +23,13 @@ def tr_lobby():
             text_type("HELP ME!", 0.03)
             text_type("Theres been an ERROR!", 0.03)
     points.points += 5
-    print(f'you now have {points.points} points')   
+    print(f'you now have {points.points} points') 
+
+    move_on = input('\n===== Press an WASD to Choose your Direction =====\n') 
+    if move_on.upper() == "S":
+        text_type("You leave the chamber and are forever known as the person with much bark but no bite.", 0.03) 
     if points.points >= 5000:
         print (f'===== You Win =====')
         sys.exit()
+        
+    mission_continue()

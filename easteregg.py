@@ -4,6 +4,7 @@ import time
 import points
 import random
 import technical
+import rand_room
 from treasure_room import *
 import rock_paper_scissors
 # Program
@@ -70,10 +71,15 @@ def user_name_check(user_name):
         print(
             f"Rand_1: {rand_int}, Rand_2: {rand_int_two}, Rand_3: {rand_int_three}")
         time.sleep(1.5)
-    elif user_name.upper() == "DEBUG_MAP":
+    elif user_name.upper() == "DEBUG_ROOM":
         map = input('> ')
         if map.upper() == 'TR_LOBBY':
             tr_lobby()
+        else:
+            print("That is not a room.")
         technical.debug_end()
     elif user_name.upper() == "DEBUG_FIGHT":
         rock_paper_scissors.rock_paper_scissors()
+    elif user_name.upper() == "DEBUG_RAND_ROOM":
+        rand_room.room_select()
+        user_death()

@@ -9,5 +9,5 @@ We have a modest list of cheat codes. I don't know how useful these are, but the
 * DEBUG_POINTS - Gives you 100 points
 * DEBUG_POINTS - Gives you *a lot* of points.
 * DEBUG_RAND - Simple test for the RNG.
-* DEBUG_MAP - Tests the map. You type the map inthe next promt.
+* DEBUG_ROOM - Tests the map. You type the map inthe next promt.
 * DEBUG_FIGHT - Starts a standard battle.

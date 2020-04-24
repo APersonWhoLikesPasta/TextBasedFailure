@@ -1,10 +1,17 @@
 # Contains all the code for the battle rooms
 # Imports
 from technical import text_type
-import time, sys, points
+import time, sys, points, opponent
 import rock_paper_scissors
+from technical import *
 
 points.points_add()
 
-print(f'you enter a room and see a troll with a stick')
-rock_paper_scissors.rock_paper_scissors()
+def battle_room():
+    
+    print(f'You enter a room and see a {opponent.opponent}, they look at your menacingly.')
+    rock_paper_scissors.rock_paper_scissors()
+
+    mission_continue()
+    
+    

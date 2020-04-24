@@ -1,8 +1,8 @@
 ###################################################################
 #                A Text Based Adventure Game                      #
-# -----------------------------------------------------------------#
+# ----------------------------------------------------------------#
 #                        Micro-README                             #
-# -----------------------------------------------------------------#
+# ----------------------------------------------------------------#
 # This is a test based adventure game. To keep things clean and   #
 # organized there are certain standards which you must adhere to. #
 # All standards are in the README. Read it. Failure to adhere to  #
@@ -15,7 +15,6 @@ import time, sys, easteregg, points, rand_room, rock_paper_scissors
 from technical import *
 # Rooms
 from treasure_room import *
-from battle_room import *
 
 # Variables
 intro = open('intro.txt')
@@ -99,9 +98,9 @@ if __name__ == "__main__":
     # Mission
     mission_breif()
     mission_start()
-    tr_lobby()
-    rock_paper_scissors.rock_paper_scissors()
-    #rand_room.room_select()
+    #rock_paper_scissors.rock_paper_scissors()
+    while points.points <= 5000:
+        rand_room.room_select_begin()
 else:
     print("Please run this module directly")
     sys.exit()
