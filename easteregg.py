@@ -1,5 +1,6 @@
 # Imports
-import sys, time, points, random
+import sys, time, points, random, technical
+from treasure_room import *
 
 # Program
 points.points_add()
@@ -58,9 +59,12 @@ def user_name_check(user_name):
             sys.stdout.flush()
         print("")
         print("test")
-    elif user_name.upper() == 'DEBUG_RAND':
+    elif user_name.upper() == "DEBUG_RAND":
         rand_int = random.randint(1, 100)
         rand_int_two = random.randint(1, 50)
         rand_int_three = random.randint(1, 10)
         print(f"Rand_1: {rand_int}, Rand_2: {rand_int_two}, Rand_3: {rand_int_three}")
         time.sleep(1.5)
+    elif user_name.upper() == "DEBUG_LOBBY":
+        tr_lobby()
+        technical.debug_end()
