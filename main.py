@@ -38,8 +38,8 @@ def user_tutorial():
     while True:
         text_type(
 """
-Greetings! In this game you will face many diffucult decisions. When you are asked for a response
-you must answer with the capitlized option. \nDo you UNDERSTAND?
+Greetings! In this game you will face many diffucult decisions. When you are asked 
+for a response you must answer with the capitlized option. \nDo you UNDERSTAND?
 """, 0.03)
         understanding = input('> ')
         if understanding.upper() == "UNDERSTAND":
@@ -65,7 +65,7 @@ def mission_breif():
 
 
 def mission_start():
-    text_type("You slowly approach the entrance. As you get closer you think that devs should have made this more intresting, but when you remember that the devs can't write themselves out of a bag. Or spell for that matter", 0.03)
+    text_type("You slowly approach the entrance. As you get closer you think that devs should have \nmade this more intresting, but when you remember that the devs can't write themselves out of a bag. \nOr spell for that matter", 0.03)
     text_type("You duck inside.", 0.03)
 
 
