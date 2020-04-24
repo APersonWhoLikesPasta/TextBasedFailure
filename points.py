@@ -1,5 +1,6 @@
 import sys
-import time 
+import time
+
 
 def points_add():
     global points

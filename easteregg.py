@@ -1,15 +1,16 @@
 # Imports
 import sys, time, points, random
 
-
 # Program
 points.points_add()
+
 
 def user_death():
     print("")
     print("===== Game Over =====")
     print("")
     sys.exit()
+
 
 def user_win():
     print("")
@@ -41,26 +42,25 @@ def user_name_check(user_name):
         print(f"You now have {points.points} points")
         if points.points >= 5000:
             user_win()
-            #print (f'===== You Win =====')
-            #sys.exit()
+            # print (f'===== You Win =====')
+            # sys.exit()
     elif user_name.upper() == "DEBUG_RUN":
-            print("Testing Exec")
-            print("ONE")
-            print("one")
-            print(1)
-            print(1.00)
-    
-            test_msg = "<---------->"
-            for char in test_msg:
-                time.sleep(0.5)
-                sys.stdout.write(char)
-                sys.stdout.flush()
-            print("")
-            print("test")
+        print("Testing Exec")
+        print("ONE")
+        print("one")
+        print(1)
+        print(1.00)
+
+        test_msg = "<---------->"
+        for char in test_msg:
+            time.sleep(0.5)
+            sys.stdout.write(char)
+            sys.stdout.flush()
+        print("")
+        print("test")
     elif user_name.upper() == 'DEBUG_RAND':
         rand_int = random.randint(1, 100)
         rand_int_two = random.randint(1, 50)
         rand_int_three = random.randint(1, 10)
         print(f"Rand_1: {rand_int}, Rand_2: {rand_int_two}, Rand_3: {rand_int_three}")
         time.sleep(1.5)
-        

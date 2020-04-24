@@ -1,1 +1,1 @@
-# Unqiue rooms that have as much content as a normal roo,
+# Unique rooms that have as much content as a normal roo,
