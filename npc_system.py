@@ -50,11 +50,13 @@ class Enemy(NPC):  # Chooses actions at random, start 100 health
 
     def attack(self, other):
         if self.health <= 35:  # Increase probability to heal when low health
-            npc_actions = ["PUNCH", "BANDAGE", "BANDAGE", "BANDAGE"]
-            npc_action = random.randint(1, 4)
+            npc_actions = ["PUNCH", "BANDAGE", "BANDAGE", "BANDAGE"]  # Needs to be manually adjusted
+            npc_action = random.randint(1, 4)  # Needs to be manually adjusted
             npc_choice = npc_actions[npc_action]
         else:
-            npc_choice = random.choice(list(actions))
+            npc_actions = list(actions.keys())
+            npc_action = random.randint(0, 1)  # Needs to be manually adjusted
+            npc_choice = npc_actions[npc_action]
         if npc_choice.upper() == "PUNCH":
             damage = actions[npc_choice]  # int(random.choice(actions[npc_choice]))
             other.health -= damage
