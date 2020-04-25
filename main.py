@@ -17,7 +17,6 @@ from technical import *
 from treasure_room import *
 from rock_paper_scissors import *
 
-
 # Variables
 intro = open('intro.txt')
 contributors = open('contributors.txt')
@@ -57,7 +56,7 @@ def user_name_selection():
     text_type(f'Glad to have you {user_name}!', 0.03)
 
 
-def mission_breif():
+def mission_brief():
     text_type("You are a wealthy g̶r̶a̶v̶e̶ ̶r̶o̶b̶b̶e̶r̶, archeologist.", 0.03)
     text_type("You are in search of secret artifacts.", 0.03)
     text_type("Each artifact you collect will give you a varying amount of points.", 0.03)
@@ -99,9 +98,9 @@ if __name__ == "__main__":
     user_tutorial()
     user_name_selection()
     # Mission
-    mission_breif()
+    mission_brief()
     mission_start()
-    #rock_paper_scissors.rock_paper_scissors()
+    # rock_paper_scissors.rock_paper_scissors()
     while points.points <= 500000:
         rand_room.room_select_begin()
 else:

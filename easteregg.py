@@ -85,6 +85,7 @@ def user_name_check(user_name):
         rand_room.room_select()
         user_death()
     elif user_name.upper() == "DEBUG_NPC_BATTLE":
-        print("I am Here")
+        print("Init Debug Battle")
         npc_system.battle(npc_system.Player(), npc_system.Enemy())
-        raise NoDontLeaveMe
+        print("Battle Over")
+        user_death()
