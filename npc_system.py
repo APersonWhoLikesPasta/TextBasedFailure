@@ -8,8 +8,8 @@ points.points_add()
 print("Battle Combat Init")
 
 actions = { # Dont forget the commas
-    "PUNCH": randint(1, 10),
-    "BANDAGE": randint(2, 5)
+    "PUNCH": 10 #random.randrange(1, 10),
+    "BANDAGE": 5 #random.randrange(2, 5)
     }
 
 class NPC: # Defines base attributes for all entities
@@ -29,12 +29,12 @@ class Player(NPC): # Start will 100 health
             print(actions)
 
             if choice == "BANDAGE":
-                self.health += int(random.choice(actions[choice]))
+                self.health += actions[choice]#int(random.choice(actions[choice]))
                 print(f"\nYour health is now {self.health}.")
             elif choice == "PUNCH":
-                damage = int(random.choice(actions[choice]))
+                damage = actions[choice] #int(random.choice(actions[choice]))
                 other.health -= damage
-                print(f"\nYou {choice} the {opponent.opponent}. You did {damage} damage.")
+                print(f"\nYou {choice} the {opponent}. You did {damage} damage.")
                 break
             else:
                 print("That's not even an option.")
@@ -52,11 +52,11 @@ class Enemy(NPC): # Chooses actions at random, start 100 health
         else:
             npc_choice = random.choice(list(actions))
         if npc_choice.upper() == "PUNCH":
-            damage = int(random.choice(actions[npc_choice]))
+            damage = actions[choice] #int(random.choice(actions[npc_choice]))
             other.health -= damage
             print(f"\nThe {opponent.opponent} attacks with {npc_choice}, and deals {damage} damage.")
         if npc_choice.upper() == "HEAL":
-            self.health += int(random.choice(actions[npc_choice]))
+            self.health += actions[choice] #int(random.choice(actions[npc_choice]))
             print(f"\nThe {opponent.opponent} heals itself.")
             print(f"\nIt is now at {self.health} health.")
 
