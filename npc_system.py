@@ -2,7 +2,6 @@ import time
 import random
 import points
 from opponent import *
-
 points.points_add()
 
 print("Battle Combat Init")
