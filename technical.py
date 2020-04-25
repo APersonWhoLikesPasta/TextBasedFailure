@@ -44,7 +44,7 @@ def mission_continue():
             continue
 
 
-def user_win_query():
+def user_win_query(): # This one counts
     if points.points >= 3000:
         print("===== You Win =====")
         sys.exit()

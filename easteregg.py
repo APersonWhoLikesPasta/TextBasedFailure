@@ -5,7 +5,9 @@ import points
 import random
 import rand_room
 from treasure_room import *
-import rock_paper_scissors
+import npc_system
+from rock_paper_scissors import *
+
 # Program
 points.points_add()
 
@@ -78,7 +80,11 @@ def user_name_check(user_name):
             print("That is not a room.")
         technical.debug_end()
     elif user_name.upper() == "DEBUG_FIGHT":
-        rock_paper_scissors.rock_paper_scissors()
+        battle_system.rock_paper_scissors()
     elif user_name.upper() == "DEBUG_RAND_ROOM":
         rand_room.room_select()
         user_death()
+    elif user_name.upper() == "DEBUG_NPC_BATTLE":
+        print("I am Here")
+        npc_system.battle(npc_system.Player(), npc_system.Enemy())
+        raise NoDontLeaveMe

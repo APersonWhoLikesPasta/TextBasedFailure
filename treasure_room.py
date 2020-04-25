@@ -11,11 +11,11 @@ def tr_lobby():
     text_type("Just as you where about to move on you notice something sparkling in the corner.", 0.03)
     treasure = randint(1, 3)
     if treasure == 1:
-        text_type("You find a small dagger.", 0.03)
+        text_type("You find a large red jewel, it could be a ruby.", 0.03)
     elif treasure == 2:
-        text_type("You find a small dagaer with a skull embosed on on the crossguard.", 0.03)
+        text_type("You find a small dagger with a skull embosed on on the crossguard.", 0.03)
     elif treasure == 3:
-        text_type("You find a small dagger embossed with a skull.", 0.03)
+        text_type("You find a small pile of bones covered in cobwebs, however the skull doesn't look human.", 0.03)
     else:
         print("ERROR: Help! `treasure_room.py` isn't working! HELP!")
         while True:

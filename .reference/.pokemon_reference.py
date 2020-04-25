@@ -1,5 +1,5 @@
 # Simple battle simulator in the style of Pokemon.
-# author: CJ
+# author: jane from allstate
 
 import random
 

@@ -11,10 +11,12 @@
 ###################################################################
 
 # Imports
-import time, sys, easteregg, points, rand_room, rock_paper_scissors
+import time, sys, easteregg, points, rand_room
 from technical import *
 # Rooms
 from treasure_room import *
+from rock_paper_scissors import *
+
 
 # Variables
 intro = open('intro.txt')
@@ -100,11 +102,8 @@ if __name__ == "__main__":
     mission_breif()
     mission_start()
     #rock_paper_scissors.rock_paper_scissors()
-    while points.points <= 5000:
+    while points.points <= 500000:
         rand_room.room_select_begin()
 else:
     print("Please run this module directly")
     sys.exit()
-
-if points.points >= 5000:
-    easteregg.user_win()
